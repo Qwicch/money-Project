@@ -81,4 +81,4 @@ for (Money m : array) {
 
 This project is licensed under the MIT License. For more information, see the LICENSE file in this repository.
 
-This project was created by qwicch, a web developer and a dog lover. You can contact me at ilmire.kireev@gmail.com.
+This project was created by qwicch, a web developer. You can contact me at ilmire.kireev@gmail.com.

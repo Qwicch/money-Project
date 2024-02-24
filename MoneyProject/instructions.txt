@@ -1,0 +1,74 @@
+        /*
+        money task:
+       - Step 1: Create an instance of the Money class with the attributes dollars = 1 and cents = 55.
+       - Step 2: Use the get_dollars and get_cents methods to retrieve the values of the dollars and cents attributes of the Money instance.
+       - Step 3: Use the set_dollars and set_cents methods to assign new values to the dollars and cents attributes of the Money instance.
+       - Test the methods with two invalid values: dollars = -2 and cents = -55. The methods should raise an exception or return an error message.
+       - Test the methods with two valid values: dollars = 1 and cents = 45. The methods should update the attributes accordingly.
+       - Step 4: Use the add method to add another Money instance to the current Money instance.
+       - Test the method with two invalid values: dollars = -1 and cents = -30. The method should raise an exception or return an error message.
+       - Test the method with two invalid values: dollars = 1 and cents = -30. The method should raise an exception or return an error message.
+       - Test the method with two invalid values: dollars = -1 and cents = 30. The method should raise an exception or return an error message.
+       - Test the method with two valid values: dollars = 1 and cents = 55. The method should return a new Money instance with the sum of the attributes of the two Money instances.
+         The expected result is dollars = 3 and cents = 0.
+       - Test the method with another two valid values: dollars = 1 and cents = 100. The method should return a new Money instance with the sum of the attributes of the two Money instances.
+         The expected result is dollars = 5 and cents = 0.
+
+
+       - Step 5: Use the subtract method to subtract another Money instance from the current Money instance.
+       - Test the method with two invalid values: dollars = -1 and cents = -30. The method should raise an exception or return an error message.
+       - Test the method with two invalid values: dollars = 1 and cents = -30. The method should raise an exception or return an error message.
+       - Test the method with two invalid values: dollars = -1 and cents = 30. The method should raise an exception or return an error message.
+       - Test the method with two invalid values: dollars = 100 and cents = 30. The method should raise an exception or return an error message.
+       - Test the method with two invalid values: dollars = 0 and cents = 5000. The method should raise an exception or return an error message.
+       - Test the method with two valid values: dollars = 0 and cents = 30. The method should return a new Money instance with the difference of the attributes of the two Money instances.
+         The expected result is dollars = 4 and cents = 70.
+       - Test the method with another two valid values: dollars = 1 and cents = 70. The method should return a new Money instance with the difference of the attributes of the two Money instances.
+         The expected result is dollars = 3 and cents = 0.
+
+                 test cases for the  multiply  method
+
+        1. **Test Case 1: Multiply by a Positive Factor**
+           - Input:  `Money(3, 0)`  and  `factor = 2.5`
+           - Expected Output: Dollars = 7, Cents = 50
+
+        2. **Test Case 2: Multiply by 0**
+           - Input:  `Money(7, 50)`  and  `factor = 0`
+           - Expected Output: Dollars = 0, Cents = 0
+
+        3. **Test Case 3: Multiply by a Decimal Factor**
+           - Input:  `Money(7, 50)`  and  `factor = 1.5`
+           - Expected Output: Dollars = 11, Cents = 25
+
+        4. **Test Case 4: Multiply by a Large Factor**
+           - Input:  `Money(11, 25)`  and  `factor = 10`
+           - Expected Output: Dollars = 112, Cents = 5
+
+        5. **Test Case 5: Multiply by a Negative Factor (Expecting Exception)**
+           - Input:  `Money(112, 5)`  and  `factor = -2`
+           - Expected Output: IllegalArgumentException: "Invalid input: Factor cannot be negative."
+
+
+               test cases for the  divide  method
+
+        1. **Test Case 1: Divide by a Positive Factor**
+           - Input:  `Money(112, 50)`  and  `factor = 2.5`
+           - Expected Output: Dollars = 45, Cents = 0
+
+        2. **Test Case 2: Divide by 0**
+           - Input:  `Money(45, 0)`  and  `factor = 0`
+           - Expected Output: "Invalid input: Factor cannot be negative or 0."
+
+        3. **Test Case 3: Divide by a Decimal Factor**
+           - Input:  `Money(45, 0)`  and  `factor = 1.5`
+           - Expected Output: Dollars = 30, Cents = 0
+
+        4. **Test Case 4: Divide by a Large Factor**
+           - Input:  `Money(30, 0)`  and  `factor = 10`
+           - Expected Output: Dollars = 3, Cents = 0
+
+        5. **Test Case 5: Divide by a Negative Factor (Expecting Exception)**
+           - Input:  `Money(30, 0)`  and  `factor = -2`
+           - Expected Output: IllegalArgumentException: "Invalid input: Factor cannot be negative."
+
+         */
